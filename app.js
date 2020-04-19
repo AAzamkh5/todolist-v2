@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://admin-khan:azam-123@cluster0-w39ap.mongodb.net/todolistDB', { useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://admin-khan:password@cluster0-w39ap.mongodb.net/todolistDB', { useUnifiedTopology: true });
 
 const itemsSchema = {
   name : String
